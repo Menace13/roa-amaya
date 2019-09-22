@@ -7,8 +7,8 @@ bambood = false;
 ate_player_bamboo = false;
 
 char_height = 36;
-idle_anim_speed = .12143;
-crouch_anim_speed = .17;
+idle_anim_speed = .11905;
+crouch_anim_speed = .13887;
 walk_anim_speed = .125;
 dash_anim_speed = .25;
 pratfall_anim_speed = .25;
@@ -52,12 +52,12 @@ knockback_adj = 1.23; //the multiplier to KB dealt to you. 1 = default, >1 = lig
 land_time = 4; //normal landing frames
 prat_land_time = 10;
 wave_land_time = 10;
-wave_land_adj = 1.5; //the multiplier to your initial hsp when wavelanding. Usually greater than 1
-wave_friction = .06; //grounded deceleration when wavelanding
+wave_land_adj = 1.4; //the multiplier to your initial hsp when wavelanding. Usually greater than 1
+wave_friction = .09; //grounded deceleration when wavelanding
 
 //crouch animation frames
 crouch_startup_frames = 3;
-crouch_active_frames = 1;
+crouch_active_frames = 9;
 crouch_recovery_frames = 1;
 
 //parry animation frames

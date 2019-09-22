@@ -1,5 +1,5 @@
 sprite_change_offset("idle", 40, 72);
-sprite_change_offset("crouch", 54, 70);
+sprite_change_offset("crouch", 54, 80);
 sprite_change_offset("walk", 46, 94);
 sprite_change_offset("walkturn", 46, 94);
 sprite_change_offset("dash", 68, 110);
