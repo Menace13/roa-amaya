@@ -1,6 +1,6 @@
 //DEFAULT COLOR (R,G,B)
 set_color_profile_slot(0, 0, 161, 145, 207); //FUR
-set_color_profile_slot(0, 1, 237, 173, 161); //SKIN
+set_color_profile_slot(0, 1, 235, 173, 158); //SKIN
 set_color_profile_slot(0, 2, 178, 178, 178); //MASK
 set_color_profile_slot(0, 3, 225, 65, 11); //SHIRT
 set_color_profile_slot(0, 4, 204, 105, 24); //SHORTS
@@ -9,7 +9,7 @@ set_color_profile_slot(0, 6, 176, 188, 191); //BANDAGES
 
 //COLOR RANGE (H,S,V)
 set_color_profile_slot_range(0, 36, 23, 20);
-set_color_profile_slot_range(1, 11, 16, 5);
+set_color_profile_slot_range(1, 9, 15, 5);
 set_color_profile_slot_range(2, 1, 1, 23);
 set_color_profile_slot_range(3, 21, 6, 20);
 set_color_profile_slot_range(4, 16, 13, 21);
