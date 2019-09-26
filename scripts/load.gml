@@ -1,3 +1,6 @@
+sprite_change_offset("amaya_hurtbox", 40, 72);
+sprite_change_offset("amaya_crouchbox", 54, 80);
+
 sprite_change_offset("idle", 40, 72);
 sprite_change_offset("crouch", 54, 80);
 sprite_change_offset("walk", 46, 94);
@@ -7,8 +10,8 @@ sprite_change_offset("dashstart", 68, 110);
 sprite_change_offset("dashstop", 64, 110);
 sprite_change_offset("dashturn", 68, 110);
 
-sprite_change_offset("jumpstart", 94, 146);
-sprite_change_offset("jump", 96, 144);
+sprite_change_offset("jumpstart", 38, 68);
+sprite_change_offset("jump", 32, 90);
 sprite_change_offset("doublejump", 96, 144);
 sprite_change_offset("walljump", 96, 144);
 sprite_change_offset("pratfall", 78, 140);

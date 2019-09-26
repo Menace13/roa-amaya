@@ -1,5 +1,5 @@
-hurtbox_spr = asset_get("ex_guy_hurt_box");
-crouchbox_spr = asset_get("ex_guy_crouch_box");
+hurtbox_spr = sprite_get("amaya_hurtbox");
+crouchbox_spr = sprite_get("amaya_crouchbox");
 air_hurtbox_spr = -1;
 hitstun_hurtbox_spr = -1;
 
@@ -18,7 +18,7 @@ walk_accel = 0.2;
 walk_turn_time = 6;
 initial_dash_time = 11;
 initial_dash_speed = 7;
-dash_speed = 6.35;
+dash_speed = 6.4;
 dash_turn_time = 9;
 dash_turn_accel = 0.75;
 dash_stop_time = 4;
@@ -46,7 +46,7 @@ wall_frames = 2; //anim frames before you leave the wall
 max_fall = 10; //maximum fall speed without fastfalling
 fast_fall = 15; //fast fall speed
 gravity_speed = .52;
-hitstun_grav = .46;
+hitstun_grav = .47;
 knockback_adj = 1.23; //the multiplier to KB dealt to you. 1 = default, >1 = lighter, <1 = heavier
 
 land_time = 4; //normal landing frames
