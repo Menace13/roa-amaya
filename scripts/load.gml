@@ -1,8 +1,8 @@
-sprite_change_offset("amaya_hurtbox", 40, 72);
-sprite_change_offset("amaya_crouchbox", 54, 80);
+sprite_change_offset("amaya_hurtbox", 39, 72);
+sprite_change_offset("amaya_crouchbox", 53, 80);
 
-sprite_change_offset("idle", 40, 72);
-sprite_change_offset("crouch", 54, 80);
+sprite_change_offset("idle", 39, 72);
+sprite_change_offset("crouch", 53, 80);
 sprite_change_offset("walk", 46, 94);
 sprite_change_offset("walkturn", 46, 94);
 sprite_change_offset("dash", 68, 110);
@@ -10,8 +10,8 @@ sprite_change_offset("dashstart", 68, 110);
 sprite_change_offset("dashstop", 64, 110);
 sprite_change_offset("dashturn", 68, 110);
 
-sprite_change_offset("jumpstart", 38, 68);
-sprite_change_offset("jump", 32, 90);
+sprite_change_offset("jumpstart", 37, 68);
+sprite_change_offset("jump", 31, 90);
 sprite_change_offset("doublejump", 96, 144);
 sprite_change_offset("walljump", 96, 144);
 sprite_change_offset("pratfall", 78, 140);
@@ -35,7 +35,7 @@ sprite_change_offset("tech", 64, 110);
 
 sprite_change_offset("hurt", 64, 110);
 sprite_change_offset("bighurt", 64, 110);
-sprite_change_offset("hurtground", 64, 110);
+sprite_change_offset("hurtground", 39, 72);
 sprite_change_offset("uphurt", 64, 110);
 sprite_change_offset("downhurt", 64, 110);
 sprite_change_offset("bouncehurt", 64, 110);

@@ -6,9 +6,9 @@ hitstun_hurtbox_spr = -1;
 bambood = false;
 ate_player_bamboo = false;
 
-char_height = 36;
-idle_anim_speed = .11905;
-crouch_anim_speed = .13887;
+char_height = 50;
+idle_anim_speed = .1191;
+crouch_anim_speed = .1389;
 walk_anim_speed = .125;
 dash_anim_speed = .25;
 pratfall_anim_speed = .25;
