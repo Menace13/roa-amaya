@@ -3,6 +3,25 @@ if (attack == AT_NSPECIAL || attack == AT_FSPECIAL || attack == AT_FSPECIAL_AIR 
     trigger_b_reverse();
 }
 
+if (attack == AT_UTILT){
+    if (window == 1 && window_timer == 23){
+        x = x - (28 * spr_dir);
+	}
+    if (window == 3 && window_timer == 3){
+        x = x - (12 * spr_dir);
+	}
+    if (window == 3 && window_timer == 7){
+        x = x - (22 * spr_dir);
+	}
+	if (free && window == 3 && window_timer == 6){
+	    attack_end();
+        attack = 0;
+    }
+	if (window == 3 && window_timer == 11){
+        iasa_script();
+    }
+}
+
 if (attack == AT_DSTRONG){
     if (window == 3 && window_timer == 1 && !hitpause){
         with (asset_get("obj_article1")){
