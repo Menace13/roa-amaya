@@ -23,7 +23,7 @@ if (attack == AT_UTILT){
 
 
 if (attack == AT_DTILT){
-	if (window == 3 && window_timer >= 11 && has_hit){
+	if (window == 3 && window_timer >= 9 && has_hit){
 		iasa_script();
 	}
 }
