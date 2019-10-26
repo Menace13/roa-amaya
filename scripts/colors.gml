@@ -1,11 +1,11 @@
 //DEFAULT COLOR (R,G,B)
-set_color_profile_slot(0, 0, 161, 145, 207); //FUR
-set_color_profile_slot(0, 1, 235, 173, 158); //SKIN
-set_color_profile_slot(0, 2, 178, 178, 178); //MASK
-set_color_profile_slot(0, 3, 225, 65, 11); //SHIRT
-set_color_profile_slot(0, 4, 204, 105, 24); //SHORTS
-set_color_profile_slot(0, 5, 153, 132, 41); //STICK
-set_color_profile_slot(0, 6, 176, 188, 191); //BANDAGES
+set_color_profile_slot(0, 0, 219, 203, 244);
+set_color_profile_slot(0, 1, 239, 182, 162);
+set_color_profile_slot(0, 2, 178, 178, 178);
+set_color_profile_slot(0, 3, 204, 54, 0);
+set_color_profile_slot(0, 4, 204, 125, 0);
+set_color_profile_slot(0, 5, 158, 133, 33);
+set_color_profile_slot(0, 6, 176, 188, 191);
 
 //COLOR RANGE (H,S,V)
 set_color_profile_slot_range(0, 36, 23, 20);
@@ -15,6 +15,8 @@ set_color_profile_slot_range(3, 21, 6, 20);
 set_color_profile_slot_range(4, 16, 13, 21);
 set_color_profile_slot_range(5, 14, 6, 23);
 set_color_profile_slot_range(6, 39, 4, 33);
+
+set_num_palettes(12);
 
 //Blue Color
 set_color_profile_slot(1, 0, 162, 151, 198);
@@ -44,13 +46,13 @@ set_color_profile_slot(3, 5, 0, 187, 153);
 set_color_profile_slot(3, 6, 255, 221, 0);
 
 //Black Color
-set_color_profile_slot(0, 0, 219, 203, 244);
-set_color_profile_slot(0, 1, 239, 182, 162);
-set_color_profile_slot(0, 2, 178, 178, 178);
-set_color_profile_slot(0, 3, 204, 54, 0);
-set_color_profile_slot(0, 4, 204, 125, 0);
-set_color_profile_slot(0, 5, 158, 133, 33);
-set_color_profile_slot(0, 6, 176, 188, 191);
+set_color_profile_slot(4, 0, 181, 130, 55);
+set_color_profile_slot(4, 1, 100, 88, 103);
+set_color_profile_slot(4, 2, 193, 189, 172);
+set_color_profile_slot(4, 3, 193, 189, 172);
+set_color_profile_slot(4, 4, 99, 59, 40);
+set_color_profile_slot(4, 5, 158, 134, 34);
+set_color_profile_slot(4, 6, 158, 134, 34);
 
 //Purple Color
 set_color_profile_slot(5, 0, 102, 103, 180);

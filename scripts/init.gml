@@ -16,22 +16,22 @@ pratfall_anim_speed = .25;
 walk_speed = 3;
 walk_accel = 0.2;
 walk_turn_time = 6;
-initial_dash_time = 11;
+initial_dash_time = 13;
 initial_dash_speed = 7;
 dash_speed = 6.4;
 dash_turn_time = 9;
 dash_turn_accel = 0.75;
 dash_stop_time = 4;
-dash_stop_percent = .5; //the value to multiply your hsp by when going into idle from dash or dashstop
-ground_friction = .41;
+dash_stop_percent = .25; //the value to multiply your hsp by when going into idle from dash or dashstop
+ground_friction = .37;
 moonwalk_accel = 1.4;
 
 jump_start_time = 5;
 jump_speed = 9;
-short_hop_speed = 4;
+short_hop_speed = 4.5;
 djump_speed = 11.5;
 leave_ground_max = 6; //the maximum hsp you can have when you go from grounded to aerial without jumping
-max_jump_hsp = 3; //the maximum hsp you can have when jumping from the ground
+max_jump_hsp = 2.5; //the maximum hsp you can have when jumping from the ground
 air_max_speed = 6; //the maximum hsp you can accelerate to when in a normal aerial state
 jump_change = 3; //maximum hsp when double jumping. If already going faster, it will not slow you down
 air_accel = .15;
@@ -48,6 +48,24 @@ fast_fall = 15; //fast fall speed
 gravity_speed = .52;
 hitstun_grav = .47;
 knockback_adj = 1.23; //the multiplier to KB dealt to you. 1 = default, >1 = lighter, <1 = heavier
+
+var opponents;
+for (i = 0; i < 3; i += 1) {
+    with oPlayer {
+        if player != other.player {
+            opponents[player.id] = player
+        }
+    }
+}
+
+connect = opponents[hit_player_obj];
+
+dinhold = false;
+dinhold_timer = 0;
+dinhold_target = null;
+dinhold_hspeed = 0;
+dinhold_escape_frame = 50;
+dinhold_last_input = null;
 
 land_time = 4; //normal landing frames
 prat_land_time = 10;
