@@ -49,16 +49,6 @@ gravity_speed = .52;
 hitstun_grav = .47;
 knockback_adj = 1.23; //the multiplier to KB dealt to you. 1 = default, >1 = lighter, <1 = heavier
 
-var opponents;
-for (i = 0; i < 3; i += 1) {
-    with oPlayer {
-        if player != other.player {
-            opponents[player.id] = player
-        }
-    }
-}
-
-connect = opponents[hit_player_obj];
 
 dinhold = false;
 dinhold_timer = 0;

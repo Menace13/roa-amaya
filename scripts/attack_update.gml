@@ -197,22 +197,13 @@ if (attack == AT_FSPECIAL_AIR){
 
 if (attack == AT_NSPECIAL){
     if (window == 2 && window_timer == 1){
-        var stalk = instance_create(x+temp_x*spr_dir, y, "obj_article2");
-        stalk.player_id = id;
-        stalk.player = player;
-        stalk.spr_dir = spr_dir;
+        var cloud = instance_create(x+temp_x*spr_dir, y, "obj_article2");
+        cloud.player_id = id;
+        cloud.player = player;
+        cloud.spr_dir = spr_dir;
         
         move_cooldown[AT_NSPECIAL] = 60;
     }
-	if (place_meeting(x, y, dampcloud) && hit_player_obj && connect.free) {
-		connect.air_max_speed = connect.air_max_speed / 2;
-		connect.air_accel = connect.air_accel / 2;
-		connect.hsp = connect.old_hsp / 2;
-		connect.vsp = connect.old_vsp / 2;
-	} else {
-		connect.air_max_speed = connect.air_max_speed;
-		connect.air_accel = connect.air_accel;
-	}
 }
 
 if (attack == AT_USPECIAL){
