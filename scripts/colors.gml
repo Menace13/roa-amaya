@@ -16,8 +16,6 @@ set_color_profile_slot_range(4, 16, 13, 21);
 set_color_profile_slot_range(5, 14, 6, 23);
 set_color_profile_slot_range(6, 39, 4, 33);
 
-set_num_palettes(12);
-
 //Blue Color
 set_color_profile_slot(1, 0, 162, 151, 198);
 set_color_profile_slot(1, 1, 135, 202, 255);
