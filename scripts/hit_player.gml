@@ -16,3 +16,7 @@ if (my_hitboxID.attack == AT_NSPECIAL && hit_player_obj.bambood && hit_player_ob
     } else
         hit_player_obj.bambood = false;
 }
+
+if (hit_player_obj.affected_by_cloud) {
+	hit_player_obj.should_make_shockwave = false;
+}

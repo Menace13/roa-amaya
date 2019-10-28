@@ -203,7 +203,7 @@ if (attack == AT_FSPECIAL_AIR){
 
 if (attack == AT_NSPECIAL){
     if (window == 2 && window_timer == 1){
-        var cloud = instance_create(x+temp_x*spr_dir, y, "obj_article2");
+        var cloud = instance_create(x + 76*spr_dir, y - 71, "obj_article2");
         cloud.player_id = id;
         cloud.player = player;
         cloud.spr_dir = spr_dir;

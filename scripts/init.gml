@@ -3,6 +3,8 @@ crouchbox_spr = sprite_get("amaya_crouchbox");
 air_hurtbox_spr = -1;
 hitstun_hurtbox_spr = -1;
 
+CLOUD_MULT = 3;
+
 bambood = false;
 ate_player_bamboo = false;
 

@@ -66,6 +66,7 @@ sprite_change_offset("taunt", 54, 94);
 
 sprite_change_offset("plat", 92, 16);
 
+sprite_change_offset("dampcloud", 66, 71);
 sprite_change_offset("bamboo_proj", 32, 32);
 sprite_change_offset("bamboo_stalk", 32, 96);
 sprite_change_offset("uspecial_arm", 6, 28);

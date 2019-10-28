@@ -16,8 +16,17 @@ with (asset_get("oPlayer")){
     if (state == PS_RESPAWN){
         bambood = false;
     }
+	if (id != other.id && leaving_cloud) {
+		hitstun_grav = normal_hitstun_grav;
+		air_friction = normal_air_friction;
+		dumb_di_mult = 1;
+		vsp *= other.CLOUD_MULT;
+		hsp *= other.CLOUD_MULT;
+		leaving_cloud = false;
+	}
 }
 
+/*
 connect = opponents[hit_player_obj];
 if (place_meeting(x, y, dampcloud) && place_meeting(x, y, dampcloud) && connect.free) {
 	connect.air_max_speed = connect.air_max_speed / 2;
@@ -28,3 +37,4 @@ if (place_meeting(x, y, dampcloud) && place_meeting(x, y, dampcloud) && connect.
 connect.air_max_speed = connect.air_max_speed;
 connect.air_accel = connect.air_accel;
 }
+*/
