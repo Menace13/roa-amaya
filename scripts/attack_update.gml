@@ -21,6 +21,12 @@ if (attack == AT_UTILT){
 	}
 }
 
+if (attack == AT_JAB){
+	if (window == 1 && window_timer == 3){
+		x = x + (4 * spr_dir);
+	}
+}
+
 
 if (attack == AT_DTILT){
 	if (window == 3 && window_timer >= 9 && has_hit){
