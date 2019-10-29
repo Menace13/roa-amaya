@@ -5,13 +5,13 @@ if (attack == AT_NSPECIAL || attack == AT_FSPECIAL || attack == AT_FSPECIAL_AIR 
 
 if (attack == AT_UTILT){
 	if (window == 1 && window_timer == 23){
-		x = x - (28 * spr_dir);
+		x = x - (28*spr_dir);
 	}
 	if (window == 3 && window_timer == 3){
-		x = x - (12 * spr_dir);
+		x = x - (12*spr_dir);
 	}
 	if (window == 3 && window_timer == 7){
-		x = x - (22 * spr_dir);
+		x = x - (22*spr_dir);
 	}
 	if (free && window == 3 && window_timer >= 5){
 		attack_end();
@@ -23,7 +23,10 @@ if (attack == AT_UTILT){
 
 if (attack == AT_JAB){
 	if (window == 1 && window_timer == 3){
-		x = x + (4 * spr_dir);
+		x = x + (2*spr_dir);
+	}
+	if (window == 1 && window_timer == 4 && free){
+		x = x - (2*spr_dir);
 	}
 }
 

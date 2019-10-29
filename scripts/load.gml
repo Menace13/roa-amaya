@@ -10,6 +10,9 @@ sprite_change_offset("dashstart", 68, 110);
 sprite_change_offset("dashstop", 64, 110);
 sprite_change_offset("dashturn", 68, 110);
 
+sprite_change_offset("abyss_crouch", 53, 80);
+sprite_change_offset("gba_crouch", 53, 80);
+
 sprite_change_offset("jumpstart", 37, 68);
 sprite_change_offset("jump", 31, 90);
 sprite_change_offset("doublejump", 96, 144);
@@ -41,7 +44,7 @@ sprite_change_offset("downhurt", 64, 110);
 sprite_change_offset("bouncehurt", 64, 110);
 sprite_change_offset("spinhurt", 64, 110);
 
-sprite_change_offset("jab", 74, 104);
+sprite_change_offset("jab", 54, 74);
 sprite_change_offset("dattack", 100, 110);
 sprite_change_offset("ftilt", 64, 126);
 sprite_change_offset("dtilt", 39, 82);
