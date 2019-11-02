@@ -38,6 +38,7 @@ set_hitbox_value(AT_FTILT, 1, HG_ANGLE, 135);
 set_hitbox_value(AT_FTILT, 1, HG_BASE_KNOCKBACK, 4);
 set_hitbox_value(AT_FTILT, 1, HG_BASE_HITPAUSE, 1);
 set_hitbox_value(AT_FTILT, 1, HG_EXTRA_HITPAUSE, 3);
+set_hitbox_value(AT_FTILT, 1, HG_TECHABLE, 3);
 set_hitbox_value(AT_FTILT, 1, HG_HITPAUSE_SCALING, .2);
 set_hitbox_value(AT_FTILT, 1, HG_SDI_MULTIPLIER, .3);
 set_hitbox_value(AT_FTILT, 1, HG_DRIFT_MULTIPLIER, .8);
