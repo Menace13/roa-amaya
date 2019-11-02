@@ -4,19 +4,19 @@ if (attack == AT_NSPECIAL || attack == AT_FSPECIAL || attack == AT_FSPECIAL_AIR 
 }
 
 if (attack == AT_UTILT){
-	if (window == 1 && window_timer == 23){
+	if (window == 2 && window_timer == 9){
 		x = x - (28*spr_dir);
 	}
-	if (window == 3 && window_timer == 3){
+	if (window == 5 && window_timer == 4){
 		x = x - (12*spr_dir);
 	}
-	if (window == 3 && window_timer == 7){
+	if (window == 5 && window_timer == 12){
 		x = x - (22*spr_dir);
 	}
-	if (free && window == 3 && window_timer >= 5){
+	if (free && window == 5 && window_timer >= 8){
 		attack_end();
 		vsp = 3.5;
-		hsp = -2 * spr_dir
+		hsp += -2 * spr_dir
 		attack = 0;
 	}
 }
@@ -27,6 +27,9 @@ if (attack == AT_JAB){
 	}
 	if (window == 1 && window_timer == 4 && free){
 		x = x - (2*spr_dir);
+	}
+	if (window == 4 && window_timer >= 12 && has_hit){
+		iasa_script();
 	}
 }
 

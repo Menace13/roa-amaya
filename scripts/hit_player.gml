@@ -17,6 +17,18 @@ if (my_hitboxID.attack == AT_NSPECIAL && hit_player_obj.bambood && hit_player_ob
         hit_player_obj.bambood = false;
 }
 
+if (my_hitboxID.attack == AT_JAB && my_hitboxID.hbox_num == 1){
+     hit_player_obj.orig_knock /= hit_player_obj.knockback_adj;
+}
+
+if (my_hitboxID.attack == AT_FTILT && my_hitboxID.hbox_num == 1){
+     hit_player_obj.orig_knock /= hit_player_obj.knockback_adj;
+}
+
+if (my_hitboxID.attack == AT_UTILT && my_hitboxID.hbox_num == 1){
+     hit_player_obj.orig_knock /= hit_player_obj.knockback_adj;
+}
+
 if (hit_player_obj.affected_by_cloud) {
 	hit_player_obj.should_make_shockwave = false;
 }

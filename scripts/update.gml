@@ -5,7 +5,7 @@ if (!free || state == PS_WALL_JUMP){
 }
 
 if (state == PS_DASH) {
-    max_jump_hsp = 7;
+    max_jump_hsp = 6.9;
 } else if(state == PS_WAVELAND) {
     max_jump_hsp = 3;
 } else if(state != PS_JUMPSQUAT) {
