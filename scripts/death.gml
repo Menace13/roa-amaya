@@ -7,6 +7,13 @@ with (asset_get("obj_article1")){
     }
 }
 
+with (asset_get("obj_article2")) {
+	if (player_id == other.id && state < 3) {
+		state = 3;
+		state_timer = 0;
+	}
+}
+
 with (asset_get("oPlayer")){
     if (bambood && bambood_id == other.id){
         bambood = false;

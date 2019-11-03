@@ -16,41 +16,40 @@ dash_anim_speed = .25;
 pratfall_anim_speed = .25;
 
 walk_speed = 3;
-walk_accel = 0.2;
+walk_accel = 0.3;
 walk_turn_time = 6;
-initial_dash_time = 13;
-initial_dash_speed = 7;
-dash_speed = 6.4;
+initial_dash_time = 9;
+initial_dash_speed = 7.5;
+dash_speed = 6.3;
 dash_turn_time = 9;
-dash_turn_accel = 0.75;
+dash_turn_accel = 0.7;
 dash_stop_time = 4;
-dash_stop_percent = .25; //the value to multiply your hsp by when going into idle from dash or dashstop
-ground_friction = .37;
-moonwalk_accel = 1.4;
+dash_stop_percent = .2; //the value to multiply your hsp by when going into idle from dash or dashstop
+ground_friction = .5;
+moonwalk_accel = 1.35;
 
 jump_start_time = 5;
-jump_speed = 9;
+jump_speed = 9.99;
 short_hop_speed = 4.5;
 djump_speed = 11.5;
 leave_ground_max = 6; //the maximum hsp you can have when you go from grounded to aerial without jumping
 max_jump_hsp = 2.5; //the maximum hsp you can have when jumping from the ground
 air_max_speed = 6; //the maximum hsp you can accelerate to when in a normal aerial state
-jump_change = 3; //maximum hsp when double jumping. If already going faster, it will not slow you down
+jump_change = 2.75; //maximum hsp when double jumping. If already going faster, it will not slow you down
 air_accel = .15;
 prat_fall_accel = 1.5; //multiplier of air_accel while in pratfall
-air_friction = .048;
+air_friction = .05;
 max_djumps = 1;
 double_jump_time = 32; //the number of frames to play the djump animation. Can't be less than 31.
-walljump_hsp = 7;
-walljump_vsp = 9.5;
+walljump_hsp = 5;
+walljump_vsp = 10;
 walljump_time = 32;
 wall_frames = 2; //anim frames before you leave the wall
 max_fall = 10; //maximum fall speed without fastfalling
 fast_fall = 15; //fast fall speed
 gravity_speed = .52;
-hitstun_grav = .47;
+hitstun_grav = .48;
 knockback_adj = 1.23; //the multiplier to KB dealt to you. 1 = default, >1 = lighter, <1 = heavier
-
 
 dinhold = false;
 dinhold_timer = 0;

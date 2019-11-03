@@ -4,26 +4,69 @@ if (attack == AT_NSPECIAL || attack == AT_FSPECIAL || attack == AT_FSPECIAL_AIR 
 }
 
 if (attack == AT_UTILT){
-	if (window == 1 && window_timer == 23){
-		x = x - (28 * spr_dir);
+	if (window == 1) {
+		var stick_in_ground = false; // set to true to disable all of this code
+		var distance_to_move = 0;
+		var loops_done = 0;
+		while (!stick_in_ground && loops_done < 17) {
+			if (place_meeting(x,y+1,asset_get("par_block"))) {
+				if (place_meeting(x-(50-distance_to_move)*spr_dir,y+1,asset_get("par_block"))) {
+					stick_in_ground = true;
+				} else {
+					distance_to_move += 1;
+				}
+			} else if (place_meeting(x,y+1,asset_get("par_jumpthrough"))) {
+				if (place_meeting(x-(50-distance_to_move)*spr_dir,y+1,asset_get("par_jumpthrough"))) {
+					stick_in_ground = true;
+				} else {
+					distance_to_move += 1;
+				}
+			} else {
+				stick_in_ground = true;
+			}
+			loops_done++;
+		}
+		if (distance_to_move > 0) {
+			x += min(17, distance_to_move);
+		}
 	}
-	if (window == 3 && window_timer == 3){
-		x = x - (12 * spr_dir);
+	if (window == 2 && window_timer == 9){
+		x = x - (28*spr_dir);
 	}
-	if (window == 3 && window_timer == 7){
-		x = x - (22 * spr_dir);
+	if (window == 3 && window_timer == 4) {
+		if (!has_hit) {
+			set_hitbox_value(AT_UTILT, 2, HG_DAMAGE, 11);
+			//set_hitbox_value(AT_UTILT, 2, HG_BASE_KNOCKBACK, 9);
+			set_hitbox_value(AT_UTILT, 2, HG_KNOCKBACK_SCALING, 0.95);
+		} else {
+			reset_hitbox_value(AT_UTILT, 2, HG_DAMAGE);
+			//reset_hitbox_value(AT_UTILT, 2, HG_BASE_KNOCKBACK);
+			reset_hitbox_value(AT_UTILT, 2, HG_KNOCKBACK_SCALING);
+		}
 	}
-	if (free && window == 3 && window_timer >= 5){
+	if (window == 5 && window_timer == 4){
+		x = x - (12*spr_dir);
+	}
+	if (window == 5 && window_timer == 12){
+		x = x - (22*spr_dir);
+	}
+	if (free && window == 5 && window_timer >= 8){
 		attack_end();
 		vsp = 3.5;
-		hsp = -2 * spr_dir
+		hsp += -2 * spr_dir
 		attack = 0;
 	}
 }
 
 if (attack == AT_JAB){
 	if (window == 1 && window_timer == 3){
-		x = x + (4 * spr_dir);
+		x = x + (2*spr_dir);
+	}
+	if (window == 1 && window_timer == 4 && free){
+		x = x - (2*spr_dir);
+	}
+	if (window == 4 && window_timer >= 12 && has_hit){
+		iasa_script();
 	}
 }
 
