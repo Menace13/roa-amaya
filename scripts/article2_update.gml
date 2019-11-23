@@ -2,7 +2,7 @@
 if (init == 0) { // article initialization code
 	with (asset_get("obj_article2")) {
 		if (init == 1) {
-			instance_destroy(self); // kill old cloud
+			state = 3; // kill old cloud
 		}
 	}
 	state = 1;
@@ -91,26 +91,24 @@ if (state == 2) {
 	}
 }
 
+// end of frame code
+state_timer++;
+
 if (state == 3) {
 	/* if you want a special animation when the cloud is dying,
 	 * that would go here, and delay the instance_destroy()
 	 * until the state_timer reaches a certain time
 	 */
 	with (asset_get("oPlayer")) {
-		if (id != l_owner && affected_by_cloud) {
-			with (asset_get("obj_article2")) {
-				if (player_id == l_owner) {
-					if (place_meeting(x,y,other.id)) {
-						other.time_in_cloud = 0;
-						other.affected_by_cloud = false;
-						other.leaving_cloud = true;
-					}
+		if (id != l_owner) {
+			with (other) {
+				if (place_meeting(x,y,other)) {
+					other.time_in_cloud = 0;
+					other.affected_by_cloud = false;
+					other.leaving_cloud = true;
 				}
 			}
 		}
 	} 
 	instance_destroy(self);
 }
-
-// end of frame code
-state_timer++;

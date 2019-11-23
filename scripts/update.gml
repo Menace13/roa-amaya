@@ -25,6 +25,7 @@ with (asset_get("oPlayer")){
 			dumb_di_mult = 1;
 			vsp *= other.CLOUD_MULT;
 			hsp *= other.CLOUD_MULT;
+			time_in_cloud = 0;
 			leaving_cloud = false;
 		}
 		if (time_in_cloud > 0 && time_in_cloud % FRAMES_PER_TICK == 0) {
